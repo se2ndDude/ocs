@@ -1,0 +1,40 @@
+.gh-account-switcher__account-wrapper {
+  position: relative;
+}
+
+/* for the classic look */
+details-menu button.gh-account-switcher__account-remove {
+  display: none;
+  opacity: 0.85;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 6px;
+  border-radius: 0 !important;
+  color: var(--color-btn-danger-hover-text);
+  background-color: var(--color-btn-danger-hover-bg);
+  border: none;
+  box-shadow: none;
+}
+
+details-menu .gh-account-switcher__account-wrapper:hover button.gh-account-switcher__account-remove {
+  display: block;
+}
+
+details-menu button.gh-account-switcher__account-remove:hover {
+  opacity: 1;
+}
+
+/* for the new look */
+.AppHeader-user .gh-account-switcher__account-remove {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.AppHeader-user .ActionListItem:hover .gh-account-switcher__account-remove {
+  display: block;
+}
